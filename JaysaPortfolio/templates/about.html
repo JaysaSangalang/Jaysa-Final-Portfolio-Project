@@ -1,0 +1,39 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>home-interior</title>
+</head>
+
+<body id="background"style="background-image:url('{% static 'coffee.png'%}');">
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <h1>About Jaysa</h1>
+        </div>
+        <div class="menu">
+            <a href="{% url 'home'%}">Home</a>
+            <a href="{% url 'about'%}">About</a>
+            <a href="{% url 'portfolio'%}">Portfolio</a>
+            <a href="{% url 'contacts'%}">Contacts</a>
+        </div>
+    </nav>
+    <div class="section">
+         <div class= "hero">
+             <article>
+                <h1>About Me</h1>
+                <img src="{% static 'picture.jpg'%}">
+                <h5>Jaysa Sangalang</h5>
+                <p>I am a student from St. Louie Anne College, a 3rd year college and i am currently taking Information Technology course.<br>I love coffee.</p>
+            </article>       
+        </div>
+    </div>   
+
+</header>
+</body>
+</html>

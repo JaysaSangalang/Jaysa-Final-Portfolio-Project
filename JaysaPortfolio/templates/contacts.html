@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <title>home-interior</title>
+</head>
+
+<body id="background"style="background-image:url('{% static 'coffee.png'%}');">
+
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <h1>Contact Information</h1>
+        </div>
+        <div class="menu">
+            <a href="{% url 'home'%}">Home</a>
+            <a href="{% url 'about'%}">About</a>
+            <a href="{% url 'portfolio'%}">Portfolio</a>
+            <a href="{% url 'contacts'%}">Contacts</a>
+        </div>  
+    </nav>
+
+    <div class="container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Your Name:</label>
+                <input type="text" name"fname" required>
+                <label for="name">Your Email:</label>
+                <input type="text" name"email" required>
+                <label for="name">Your Message:</label>
+                <textarea name="mssg" row="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h3>Our Location</h3>
+            <p>adjhfjsdhfjhsdf</p>
+            <h3>Contact Details</h3>
+            <p>Email: example@gmail.com<br>Phone Number: 09127712399</p>
+    </div>
+</header>
+</body>
+</html>
